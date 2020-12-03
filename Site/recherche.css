@@ -1,0 +1,55 @@
+body {
+	border: 0;
+	margin: 0;
+  width: 100%;
+  background-image:url(images/surf.jpg);
+  background-repeat:no-repeat;
+
+  background-size: cover;
+}
+
+#header {
+	background-color: #0064ffcc;
+
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+
+#logo {
+	width: 100px;
+	height: 100px;
+	margin: auto;
+  padding-top: 10
+}
+
+.button_sign {
+  border-radius: 8px;
+  background-color: #f4641e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 19px;
+  padding: 12px;
+  /*width: 80px;*/
+  cursor: pointer;
+  margin: 5px;
+  float: right;
+  position: absolute;
+  top : 20px;
+}
+.button_sign:hover {
+  cursor: pointer;
+  background-color: #0064ffcc;
+  border: 2px solid #f4641e;
+}
+
+#sign_in {
+  right: 10px;
+}
+
+#contenu {
+  height: 2000px;
+}
+
+
