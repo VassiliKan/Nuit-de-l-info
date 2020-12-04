@@ -44,7 +44,9 @@ body {
 .button_sign:hover {
   cursor: pointer;
   background: none;
-
+   background-color: #fff;
+  border: 3px solid #f4641e;
+  color: #f4641e;
 }
 
 #sign_in {
