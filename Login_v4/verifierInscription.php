@@ -1,8 +1,8 @@
 <?php
-$server ="localhost";
-$login ="root";
-$mdp ="";
-$bdd ="test";
+$server ="http://146.59.251.249";
+$login ="debian";
+$mdp ="ehman";
+$bdd ="surf";
 $user = $_POST['user_reg'];
 
 
