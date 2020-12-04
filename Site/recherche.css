@@ -9,7 +9,7 @@ body {
 }
 
 #header {
-	background-color: #0064ffcc;
+	background-color: #73d4f2bf;;
 
   position: sticky;
   top: 0px;
@@ -20,28 +20,31 @@ body {
 	width: 100px;
 	height: 100px;
 	margin: auto;
-  padding-top: 10
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .button_sign {
   border-radius: 8px;
   background-color: #f4641e;
-  border: none;
+  border: 3px solid #f4641e;
   color: #FFFFFF;
   text-align: center;
   font-size: 19px;
   padding: 12px;
-  /*width: 80px;*/
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
-  margin: 5px;
   float: right;
   position: absolute;
-  top : 20px;
+  top : 30px;
+  margin-right: 30px;
 }
+
 .button_sign:hover {
   cursor: pointer;
-  background-color: #0064ffcc;
-  border: 2px solid #f4641e;
+  background: none;
+
 }
 
 #sign_in {
