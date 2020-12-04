@@ -278,6 +278,7 @@ iframe {
   width: 0;
   height: 2px;
   background: #7f7f7f;
+  
   -webkit-transition: all 0.4s;
   -o-transition: all 0.4s;
   -moz-transition: all 0.4s;
@@ -294,11 +295,11 @@ iframe {
 }
 
 .input100:focus + .focus-input100::after {
-  color: #a64bf4;
+  color :#f4641e;
 }
 
 .has-val.input100 + .focus-input100::after {
-  color: #a64bf4;
+  color :#f4641e;
 }
 
 
