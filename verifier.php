@@ -6,13 +6,17 @@ $mdp ="ehman";
 $bdd ="surf";
 $user = $_POST['user_reg'];
 
+echo "branle ma queue";
 
 try {
     $linkpdo = new PDO("mysql:host=$server;dbname=$bdd", $login, $mdp);
+    $linkpdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     echo "tes co";
 } catch (Exception $e) {
     die('Erreur : ' . $e->getMessage());
 }
+
+
 
 echo "troll";
 if(isset($_POST['user_log']) AND isset($_POST['password_log']))
@@ -21,8 +25,8 @@ if(isset($_POST['user_log']) AND isset($_POST['password_log']))
      if(preg_match('#^[a-zA-Z0-9.]{3,15}$#',$_POST['user_log']))
      {
          $req = $linkpdo->prepare('SELECT * FROM user WHERE username = :username');
-         $req->bindParam(':username',$_POST['user_log']);
-         $req->execute();
+         $req -> bindParam(':username',$_POST['user_log']);
+         $req -> execute();
          $req = $req->fetch();
          echo "test";
          if(isset($req['password']))
