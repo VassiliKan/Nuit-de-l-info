@@ -1,0 +1,85 @@
+body {
+	text-align: center;
+	border-style: solid;
+    border-width: 5px;
+	margin-left : 20%;
+	margin-right : 20%;
+}
+
+div #qualité{
+	text-align : center;
+}
+
+div #info {
+	border-style: solid;
+    border-width: 5px;
+}
+
+div #tableau {
+	text-align : right;
+}
+
+table.tableau {
+	margin-left: auto;
+    margin-right: auto;
+}
+ table.etoile {
+	margin-left: auto;
+    margin-right: auto;
+ }
+
+div#freq {
+    display:inline-block;
+}
+.slidecontainer {
+    display:inline-block;
+}
+
+.bateau {
+    display:inline-block;
+    background-color: blue;
+}
+
+div.radio-box {
+    width: 100px;
+    display: inline-block;
+    margin: 5px;
+}
+.radio-box label {
+    display:block;
+    width: 100px;
+    text-align: center;
+}
+
+h1{
+    font-weight: normal;
+    color: var(--txt-color);
+  }
+  h2 {
+    font-size: 1.1rem;
+    color: var(--txt-color);
+    font-weight: normal;
+    text-transform: uppercase;
+    margin:0;
+    border-bottom: 1px solid #ccc;
+  }
+    
+.checkbox {
+    display: inline-block;
+}
+/*
+td.ville {
+	padding-right : 15%;
+	
+}
+td.heurd{
+	padding-left : 15%
+}
+td.spot {
+	padding-right : 15%;
+	
+}
+td.heuref{
+	padding-left : 15%;
+}
+*/

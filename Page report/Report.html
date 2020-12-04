@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width" ∕>
+
+			<title>Report</title>
+			<link rel="stylesheet" type="text/css" href="Report.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="Etoile.js"></script>
+		</head>
+		<body>
+			<form method="post" action="traitement.php">
+				<h1>  Comment s'est passée votre session?</h1><br>
+				<div id="info">
+					<h2>Informations Générales</h2>
+					<div id="tableau">
+						<table class="tableau">
+							<tr><td class="ville">Ville  <input type="text" name="ville"/></td><td class="heured">Heure de debut <input type="time" name="heuredebut"/></td></tr>
+							<tr><td class="spot">Spot <input type="text" name="spot" /></td><td class="heuref">Heure de fin <input type="time" name="heurefin" /></td></tr>
+						</table>
+					</div>
+				</div>
+				<div id="qualité">
+					<h2> Qualité du spot </h2><br>
+					<div>
+						<table class="etoile">
+							<tr>
+								<td>
+									<h1>Qualité des vagues </h1>
+								</td>
+								<!-- first continer element for the first star rating system-->
+								<td>
+									<div id="star_rating">
+									</div>
+								</td>
+							</tr>
+								<td>
+									<h1>Qualité du vent </h1>
+								</td>
+								<!-- second continer element for the first star rating system-->
+								<td>
+									<div id="star_rating2">
+									<div>
+								</td>
+							</tr>
+						</table>
+						<div id="freq">Fréquentation </div>
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                        </div> <br>
+                        <div class="radio"><p>Présence de bateau</p></div>
+                        <div class = "radio">
+                            <div class="radio-box">
+                                <input type="radio" name="sex" value="Pas du tout"><label>Pas du tout</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" name="sex" value="Rare"><label>Rare</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" name="sex" value="Peu"><label>Peu</label>
+                            </div>
+                            <div class="radio-box">
+                                <input type="radio" name="sex" value="Beaucoup"><label>Beaucoup</label>
+                            </div> 
+                        </div>
+						<div class="checkbox"><p>Présence animale</p> </div>                                
+                        <div class="checkbox">
+                            <input type="checkbox" id="Méduses" name="Méduses" checked>
+                            <label for="Méduses">Méduses</label>
+                        </div>
+                        
+                        <div class="checkbox">
+                            <input type="checkbox" id="Requins" name="Requins">
+                            <label for="Requins">Requins</label>
+                        </div>
+				</div>
+				<div id="utilisation">
+					<h2> Utilisation de produit </h2><br>
+					<div>
+						<p></p>
+					</div>
+				</div>
+				<div id="signalement">
+					<h2> Signalement de déchets </h2><br>
+					<div>
+						<p></p>
+					</div>
+				</div>
+				
+			</form>
+		</body>
+	</html>
